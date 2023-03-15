@@ -1,0 +1,161 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #F2EAE2;
+  font-family: 'Fraunces', serif;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 343px;
+  height: 610px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.mob-img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.desk-img {
+  display: none;
+}
+
+.container-item2 {
+  margin-top: 25px;
+  margin-left: 24px;
+}
+
+.perfum {
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 14.63px;
+  letter-spacing: 5px;
+  width: 92px;
+  height: 15px;
+  color: #6C7289;
+}
+
+.header {
+  font-size: 32px;
+  font-family: Fraunces;
+  font-weight: 700;
+  line-height: 32px;
+  width: 295px;
+  height: 64px;
+  margin-top: 12px;
+  color: #1C232B;
+}
+
+.para {
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 23px;
+  width: 295px;
+  height: 92px;
+  margin-top: 16px;
+  color: #6C7289;
+}
+
+.pricecont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 194px;
+  height: 32px;
+  margin-top: 24px;
+}
+
+.newprice {
+  font-size: 32px;
+  font-family: Fraunces;
+  font-weight: 700;
+  line-height: 32px;
+  width: 127px;
+  height: 32px;
+  color: #3D8168;
+}
+
+.oldprice {
+  font-size: 13px;
+  font-family: Montserrat;
+  font-weight: 500;
+  line-height: 23px;
+  width: 48px;
+  height: 23px;
+  margin-top: 5px;
+  color: #6C7289;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 295px;
+  height: 48px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: #3D8168;
+}
+
+.add {
+  font-size: 14px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 17px;
+  width: 85px;
+  height: 17px;
+  margin-left: 11px;
+  color: white;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    flex-direction: row;
+    width: 600px;
+    height: 450px;
+  }
+
+  .mob-img {
+    display: none;
+  }
+
+  .desk-img {
+    display: block;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .header {
+    width: 236px;
+    height: 96px;
+    margin-top: 20px;
+  }
+
+  .para {
+    width: 237px;
+    height: 92px;
+    margin-top: 24px;
+  }
+
+  .btn {
+    width: 236px;
+    height: 48px;
+    margin-top: 30px;
+    transition:  background-color .15s;
+  }
+
+  .btn:hover {
+    background-color: #1A4032;
+  }
+}
